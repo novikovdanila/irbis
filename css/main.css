@@ -122,6 +122,7 @@ html{
 	
 	color: #FFF;
 	text-align: center;
+	font-family: inherit;
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 28px;
