@@ -56,6 +56,22 @@ html{
 	background-image: url('./../img/bg-4.svg');
 }
 
+.section-top.bg-5{
+	background-image: url('./../img/bg-5.svg');
+}
+
+.section-top.bg-6{
+	background-image: url('./../img/bg-6.svg');
+}
+
+.section-top.bg-7{
+	background-image: url('./../img/bg-7.svg');
+}
+
+.section-top.bg-8{
+	background-image: url('./../img/bg-8.svg');
+}
+
 .section-top__wrapper {
 	width: 100%;
 	display: grid;
@@ -133,6 +149,7 @@ html{
 	border-radius: 10px;
 	background-color: #57D690;
 	cursor: pointer;
+	appearance: none;
 
 	transition: background-color .2s ease-out;
 }
@@ -220,6 +237,16 @@ html{
 	margin: 16px 0 90px;
 }
 
+.title-h2{
+	display: block;
+	text-align: center;
+	margin-bottom: 40px;
+
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 46px;
+}
+
 .benefits__list {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -252,27 +279,30 @@ html{
 	line-height: 24px;
 }
 
+.benefits__item-title{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px; /* 150% */
+	text-align: center;
+}
+.benefists__text-tiny{
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px; /* 157.143% */
+	text-align: center;
+}
+
 .benefists__text span{
 	font-weight: 400;
 }
 
 
-@media (max-width: 1200px) {
-
-	/* .container{
-		max-width: 1024px;
-	}
-		 */
-}
 
 @media (max-width: 1023px) {
 	.title-h1 {
-		/* padding-top: 0; */
-		/* margin-bottom: 30px; */
-	
 		font-size: 36px;
 		line-height: 46px;
-		/* text-align: center; */
 	}
 
 	.free-class {
@@ -316,7 +346,6 @@ html{
 
 		position: relative;
 		padding: 42px;
-		/* width: min(600px, 100%); */
 		width: 100%;
 		max-width: 100%;
 		height: fit-content;
@@ -349,6 +378,11 @@ html{
 
 	.benefits {
 		margin: 20px 0 60px;
+	}
+
+	.title-h2{
+		font-size: 26px;
+		line-height: 36px; /* 138.462% */
 	}
 
 	.benefits__list {
@@ -408,8 +442,14 @@ html{
 
 	/* Benefists */
 
-	.benefits {
+	/* .benefits{
 		overflow-x: auto;
+	} */
+	
+
+	.title-h2{
+		font-size: 20px;
+		line-height: 28px; /* 140% */
 	}
 
 	.benefits__list {
@@ -417,6 +457,7 @@ html{
 		grid-template-columns: repeat(4, 1fr);
 		gap: 20px;
 
+		overflow-x: auto;
 	}
 
 	.benefits__list.list-3-2{
